@@ -1,0 +1,20 @@
+~zdhlib.feature
+  * 获取一篇文章的词表，包括去停用词。 
+		#类名：Words； 
+		#函数:  
+			getStopList：读取stoplist
+			getAnalysisWords：读取解析文件,获取文章的词
+			getWords(AnalysisFilePath, stoplistFilePath):接口函数
+		#返回：ArrayList<String> words.
+  
+  * 训练语料类别统计文档统计
+  		#类名：CategoryInit
+  		#函数：
+  			getTrainCategories: 获取训练语料所有类别，通过文件夹名字获取（文件夹名字为类别名称）
+  			getTrainFileNumber: 获取训练语料每个类别的文档数量
+  
+  * 特征统计，使用卡方检验计算
+  		#类名：FeatureCount;
+  		#函数：
+  			
+  			
